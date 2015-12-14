@@ -45,6 +45,10 @@
         }
         /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        #mc-embedded-subscribe{
+            width: 100px !important;
+            padding: 4px !important;
+        }
     </style>
 
 </head>
@@ -186,7 +190,14 @@
                                             <h4 class="newsletter_title" style="margin: 0">
                                                 Stay informed with our newsletter
                                             </h4>
-                                            <input type="email" value="" name="EMAIL" class="required email form-control form-opacity no-margin newsletter_input" id="mce-EMAIL">
+                                            <div class="row">
+                                                <div class="col-sm-9">
+                                                    <input type="email" value="" name="EMAIL" class="required email form-control form-opacity no-margin newsletter_input" id="mce-EMAIL">
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <input for="txtEmail" style="margin:0 !important" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-white btn-rounded">
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-12">
@@ -200,7 +211,6 @@
                                                 <div class="form-tip">
                                                     <i class="fa fa-info-circle"></i> By subscribing, you authorize us to contact you via phone or electronic communication.
                                                 </div>
-                                                <input for="txtEmail" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-white btn-rounded">
                                             </div>
                                         </div>
                                     </div>
