@@ -456,7 +456,7 @@ columns.height(tallestcolumn);
 
 function sendMail() {
     var name = escape(document.getElementById('name').value);
-    var number = escape(document.getElementById('number').value);
+    var surname = escape(document.getElementById('surname').value);
     var typeApp = escape(document.getElementById('typeApp').value);
     var time = escape(document.getElementById('time').value);
     var typeHours = escape(document.getElementById('typeHours').value);
@@ -464,19 +464,14 @@ function sendMail() {
     var phone = escape(document.getElementById('phone').value);
     var message = escape(document.getElementById('message').value);
     var line = "\n";
-	
-	var body = "Name: " + name + line;
-	body += "E-mail: " + email + line;
-	body += "Phone: " + phone + line + line;
-    body += "Time: " + time + " " + typeHours + line;
-	body += "Number of Guests: " + number + line;
-	body += "Type of Appointment: " + typeApp + line + line;
-	body += "Special Request: " + message;
 
-	var str = 'http://mail.google.com/mail/?view=cm&fs=1'+
-              '&to=' + "vuhoanganh1603@gmail.com" +
+    var body = "Name: " + name + line + "SurName: "+ surname + line + "Type of Appointment: "+ typeApp + line
+             + "Time: "+ time + line + typeHours + line + "Email: "+ email + line + "Phone: "+ phone + line + "Description: "+ message + line;
+
+    var str = 'http://mail.google.com/mail/?view=cm&fs=1' +
+              '&to=' + "youngbeautifulsalonspa@gmail.com" +
               '&su=' + "Book Online" +
-              '&body=' + body.replace(/\n/g,'%0A') +
+              '&body=' + body.replace(/\n/g, '%0A') +
               '&ui=1';
     location.href = str;
 }

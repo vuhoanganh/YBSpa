@@ -3,47 +3,66 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Young Beautiful Spa</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Young & Beautiful Salon Spa </title>
 
     <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Font Awesome CSS -->
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
-    <link href="fonts/themify-icons.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="fonts/themify-icons.css" rel="stylesheet">
 
     <!-- Owl Carousel CSS -->
-    <link href="css/owl.carousel.css" rel="stylesheet" />
+    <link href="css/owl.carousel.css" rel="stylesheet">
 
     <!-- Magnific Popup core CSS file -->
-    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
     <!-- Animate CSS -->
-    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/animate.css">
 
     <!-- Theme CSS -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- Spa Icons -->
-    <link href="fonts/spa/flaticon.css" rel="stylesheet" />
+    <link href="fonts/spa/flaticon.css" rel="stylesheet">
 
     <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+
+    <!-- Begin MailChimp Signup Form -->
+    <link href="css/classic-081711.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        #mc_embed_signup {
+            background: #fff;
+            clear: left;
+            font: 14px Helvetica,Arial,sans-serif;
+        }
+        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        #mc-embedded-subscribe {
+            width: 100px !important;
+            padding: 4px !important;
+        }
+    </style>
+
 </head>
 <body>
     <div class="page" id="page">
 
         <!-- Header -->
-        <header class="no_border green_hover">
+         <header class="no_border green_hover">
+
 
             <!-- Logo -->
             <div class="logo pull-left">
-                <a href="HomePage.html"><b>YoungBeutiful Spa</b></a>
+                <a href="HomePage.html"><b>Young & Beautiful Salon Spa</b></a><br />
             </div>
+
 
             <!-- Header Buttons -->
             <div class="header_btns_wrapper">
@@ -63,7 +82,24 @@
                             <li><a href="BookOnline.html">BOOK ONLINE</a></li>
                             <li><a href="Contact.html">CONTACT</a></li>
 
+                            <!-- Search
+                            <li class="right_sub no_arrow sub_min_width"><a href="#" class="parents"><i class="ti-search"></i></a>
+                                <ul class="mega_menu">
+                                    <li class="mega_sub bask_menu">
+                                        <form>
+                                            <input type="text" class="form-control" placeholder="Enter Your Keywords">
+                                            <button type="submit" class="se_btn">
+                                              <i class="ti-search"></i>
+                                            </button>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <!-- Search End-->
+
                         </ul>
+
+
                     </div>
                 </div>
                 <!-- Sub Menu End -->
@@ -77,15 +113,13 @@
         <!-- Header End -->
         <!--Intro-->
 
-        <section class="boxes simple_title" id="bookonline">
+         <section class="boxes simple_title" id="contest">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-12 no-padding image_bck no-cover" data-color="#f5f5f5">
+                    <div class="col-md-12 bordered_block no-padding image_bck no-cover" data-color="#f5f5f5">
 
                         <div class="simple_block">
                             <h3 class="wow fadeInUp">Contest</h3>
-                            <br />
-                            <%--<span>Our online booking is now available for your convenience. We will send back a confirmation within 24 hours. </span>--%>
                         </div>
                     </div>
                 </div>
@@ -237,30 +271,57 @@
             <div class="footer_end white_txt image_bck" data-color="#5fc7ae">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-6">
-                            <span class="sub">&copy; Copyright 2015 - SSC</span>
+                        <div class="col-sm-4">
+                            <a href="http://www.9cmarketing.com/">  <span class="sub">&copy; Copyright 2015 - Design by 9C Marketing </span></a>
                         </div>
-                        <div class="col-sm-6 text-right">
+
+                        <div class="col-sm-4">
+                            <div id="mc_embed_signup" style="background: #5fc7ae none repeat scroll 0 0 !important;">
+                                <form action="//facebook.us11.list-manage.com/subscribe/post?u=01b7b6dcd807d4562015e49a3&amp;id=371dae5870" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                    <div id="mc_embed_signup_scroll">
+                                        <div class="mc-field-group">
+                                            <h4 class="newsletter_title" style="margin: 0">
+                                                Stay informed with our newsletter
+                                            </h4>
+                                            <div class="row">
+                                                <div class="col-sm-9">
+                                                    <input type="email" value="" name="EMAIL" class="required email form-control form-opacity no-margin newsletter_input" id="mce-EMAIL">
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <input for="txtEmail" style="margin:0 !important" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-white btn-rounded">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div id="mce-responses" class="clear">
+                                                    <div class="response" id="mce-error-response" style="display: none"></div>
+                                                    <div class="response" id="mce-success-response" style="display: none"></div>
+                                                </div> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                                <div class="clear" style="position: absolute; left: -5000px;" aria-hidden="true">
+                                                    <input type="text" id="txtEmail" name="b_01b7b6dcd807d4562015e49a3_371dae5870" tabindex="-1" value="">
+                                                </div>
+                                                <div class="form-tip">
+                                                    <i class="fa fa-info-circle"></i> By subscribing, you authorize us to contact you via phone or electronic communication.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-right">
                             <ul class="list-inline social-list">
 
                                 <li>
-                                    <a href="https://www.facebook.com/youngbeautifulsalonspa/" data-toggle="tooltip" data-placement="top" title="Facebook">
-                                        <i class="ti-facebook"></i>
+                                    <a href="https://www.facebook.com/youngbeautifulsalonspa/" data-placement="top" title="Facebook">
+                                        <img src="images/icon-face.png" width="100%" />
+                                        <!--<i class="ti-facebook"></i>-->
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter">
-                                        <i class="ti-twitter-alt"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Dribbble">
-                                        <i class="ti-dribbble"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Vimeo">
-                                        <i class="ti-vimeo-alt"></i>
+                                    <a href="https://www.instagram.com/youngbeautifulsalonspa/" data-placement="top" title="Instagram">
+                                        <img src="images/icon-ins.jpeg" width="100%" />
                                     </a>
                                 </li>
                             </ul>
@@ -300,6 +361,17 @@
     <script src="js/masonry.pkgd.min.js"></script>
     <!-- Theme JS -->
     <script src="js/script.js"></script>
+
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>
+        (function ($) {
+            window.fnames = new Array();
+            window.ftypes = new Array();
+            fnames[0] = 'EMAIL';
+            ftypes[0] = 'email';
+        }(jQuery));
+        var $mcj = jQuery.noConflict(true);
+    </script>
 
 </body>
 </html>
