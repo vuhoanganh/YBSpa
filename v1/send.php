@@ -13,6 +13,12 @@
     $body .= "Phone: " .$number .$bLine .$bLine;
     $body .= "Favorite spa service:" .$bLine;
 
+    $cbType = $_POST['cbType'];
+
+    foreach ($cbType as $type){
+      $body .= "- " .$type.$bLine;
+    }
+
     $body .= "- Other:" .$bLine;
     $body .= "  " .$other;
     
