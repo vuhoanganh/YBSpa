@@ -18,6 +18,15 @@
     
     mail('shadowsong24@gmail.com', 'Contest', $body);
 	mail('vuhoanganh1603@gmail.com', 'Contest', $body);
+	?>
+	<script type="text/javascript">
+		window.onload = function(){
+			alert('Message Sent');	
+		}
+		
+	</script>
+	<a href="http://youngbeautifulsalonspa.com/HomePage.html">Back to HomePage</a>
+	<?php
 
     header('location: HomePage.html');
     exit(0);
