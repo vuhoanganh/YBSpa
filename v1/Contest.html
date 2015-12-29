@@ -31,6 +31,11 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
 
+    <!--Hover-->
+    <link href="css/demo-page.css" rel="stylesheet" media="all">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+
     <!-- Begin MailChimp Signup Form -->
     <link href="css/classic-081711.css" rel="stylesheet" type="text/css">
     <style type="text/css">
@@ -74,6 +79,7 @@
                             <li><a href="BeautyTips.html">BEAUTY TIPS</a></li>
                             <li><a href="Events.html">EVENTS</a></li>
                             <li><a href="Special.html">SPECIALS</a></li>
+							<li><a href="Contest.html">CONTEST</a></li>
                             <li><a href="Services.html">SERVICES</a></li>
                             <li><a href="Gallery.html">GALLERY </a></li>
                             <li><a href="BookOnline.html">BOOK ONLINE</a></li>
@@ -137,23 +143,35 @@
                                 <div class="text-center">
                                     To celebrate the launch of our website www.youngbeautifulsalonspa.com, we are hosting a contest with 2 GREAT PRIZES:
                                 </div>
-                                <div class="text-center">
-                                    COUPLE MASSAGE GIFT CERTIFICATE
-                                </div>
-                                <div class="text-center">
-                                    1 HOUR EACH PERSON
-                                </div>
-                                <div class="text-center">
-                                    (worth $120)
-                                </div>
-                                <div class="text-center">
-                                    PAMPERING GIFT CERTIFICATE
-                                </div>
-                                <div class="text-center">
-                                    SHELLAC MANI & PEDI, FOOT MASSAGE & FACIAL
-                                </div>
-                                <div class="text-center">
+                                <!--hover-->
+                                <a href="#" class="hvr-radial-out"> COUPLE MASSAGE GIFT CERTIFICATE<br/>
+                                    1 HOUR EACH PERSON<br/>
+                                    (worth $120)</a>
+
+                                <a href="#" class="hvr-radial-in">PAMPERING GIFT CERTIFICATE <br/>
+                                    SHELLAC MANI & PEDI, FOOT MASSAGE & FACIAL<br/>
                                     (worth $150)
+
+                                
+                                </a>
+
+                                <div class="text-center">
+                                   
+                                </div>
+                                <div class="text-center">
+                                    
+                                </div>
+                                <div class="text-center">
+                                    
+                                </div>
+                                <div class="text-center">
+                                    
+                                </div>
+                                <div class="text-center">
+                                   
+                                </div>
+                                <div class="text-center">
+                                    
                                 </div>
                             </div>
                             <div class="row" style="margin-top: 40px">TO ENTER, please fill out the entire entry form below:</div>
@@ -249,6 +267,7 @@
                                 </div>
                             </div>
                             <div class="row">
+                                
                                 <div class="row">THIS CONTEST IS OPEN TO ONTARIO RESIDENTS ONLY AND IS GOVERNED BY CANADIAN LAW. The contest begins on January 1st, 2016 at 12:00:01 a.m. ET, and ends on January 31st, 2016 at 11:59:59 p.m. ET. No purchase necessary to enter or win. One entry per customer. Valid entry must have your first and last name, valid email address and valid telephone number, and reply to survey question. Must be 18 year old or over. Must be a resident of the province of Ontario. Two winners will be selected and will be notified of the winning by February 15th, 2016. An ID must be presented to claim the prize(s). You must answer a simple skill testing question to claim your prize(s). You will be informed of your winning via telephone or email. </div>
                                 <div class="row">By entering the contest and clicking on submit, you authorize Young & Beautiful Salon Spa to contact you via phone or electronic communication. By entering this contest, each entrant expressly consents to Young & Beautiful Salon Spa, their agents and/or representatives, storing, sharing and using the personal information submitted with his/her contest entry only for the purpose of administering the contest and in accordance with Young & Beautiful Salon & Spa privacy policy, unless the entrant otherwise agrees.</div>
                                 <div class="row">Young & Beauty Salon Spa reserves the right, to withdraw, amend or suspend this contest (or to amend these Rules) in any way, in the event of an error, technical problem, computer virus, bugs, tampering, unauthorized intervention, fraud, technical failure or any other cause beyond the reasonable control of Young & Beauty Salon Spa that interferes with the proper conduct of this contest as contemplated by these Rules. Any attempt to deliberately damage any website or to undermine the legitimate operation of this contest in any way (as determined by Young & Beauty Salon Spa in their sole and absolute discretion) is a violation of criminal and civil laws and should such an attempt be made, Young & Beauty Salon Spa reserves the right to seek remedies and damages to the fullest extent permitted by law. Young & Beauty Salon Spa reserves the right to cancel, amend or suspend this contest, or to amend these Rules, in any way without prior notice or obligation, in the event of any accident, printing, administrative, or other error of any kind, or for any other reason whatsoever. Without limiting the generality of the forgoing, Young & Beauty Salon Spa reserves the right, in their sole and absolute discretion, to administer an alternate test of skill as it deems appropriate based on the circumstances and/or to comply with applicable law.</div>
@@ -348,6 +367,36 @@
         }(jQuery));
         var $mcj = jQuery.noConflict(true);
     </script>
+
+<!--hover-->
+    <script>
+			/**
+			 * Used to demonstrate Hover.css only. Not required when adding
+			 * Hover.css to your own pages. Prevents a link from being
+			 * navigated and gaining focus.
+			 */
+			var effects = document.querySelectorAll('.effects')[0];
+
+			effects.addEventListener('click', function(e) {
+
+				if (e.target.className.indexOf('hvr') > -1) {
+					e.preventDefault();
+					e.target.blur();
+
+				}
+			});
+    </script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-11991680-4', 'ianlunn.github.io');
+		  ga('send', 'pageview');
+    </script>
+
 
 </body>
 </html>
