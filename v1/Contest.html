@@ -1,9 +1,5 @@
-﻿<div style="display: none"></div>
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Contest.aspx.cs" Inherits="Spa.Contest" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,7 +52,7 @@
     <div class="page" id="page">
 
         <!-- Header -->
-         <header class="no_border green_hover">
+        <header class="no_border green_hover">
 
 
             <!-- Logo -->
@@ -78,11 +74,25 @@
                             <li><a href="BeautyTips.html">BEAUTY TIPS</a></li>
                             <li><a href="Events.html">EVENTS</a></li>
                             <li><a href="Special.html">SPECIALS</a></li>
-                            <li><a href="Contest.aspx">CONTEST</a></li>
                             <li><a href="Services.html">SERVICES</a></li>
                             <li><a href="Gallery.html">GALLERY </a></li>
                             <li><a href="BookOnline.html">BOOK ONLINE</a></li>
                             <li><a href="Contact.html">CONTACT</a></li>
+
+                            <!-- Search
+                            <li class="right_sub no_arrow sub_min_width"><a href="#" class="parents"><i class="ti-search"></i></a>
+                                <ul class="mega_menu">
+                                    <li class="mega_sub bask_menu">
+                                        <form>
+                                            <input type="text" class="form-control" placeholder="Enter Your Keywords">
+                                            <button type="submit" class="se_btn">
+                                              <i class="ti-search"></i>
+                                            </button>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <!-- Search End-->
 
                         </ul>
 
@@ -100,7 +110,7 @@
         <!-- Header End -->
         <!--Intro-->
 
-         <section class="boxes simple_title" id="contest">
+        <section class="boxes simple_title" id="contest">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12 no-padding image_bck no-cover" data-color="#f5f5f5">
@@ -122,12 +132,11 @@
                     <!-- Contacts -->
                     <div class="col-md-12 simple_block text-left">
 
-                        <form id="write_us" class="form" runat="server">
+                        <form id="write_us" class="form" action="send.php" method="POST">
                             <div class="row">
                                 <div class="text-center">
-                                    To celebrate the launch of our website www.youngbeautifulsalonspa.com, we are hosting a contest with 2 GREAT PRIZES: 
+                                    To celebrate the launch of our website www.youngbeautifulsalonspa.com, we are hosting a contest with 2 GREAT PRIZES:
                                 </div>
-								
                                 <div class="text-center">
                                     COUPLE MASSAGE GIFT CERTIFICATE
                                 </div>
@@ -150,84 +159,93 @@
                             <div class="row" style="margin-top: 40px">TO ENTER, please fill out the entire entry form below:</div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="text" id="txtFName" runat="server" class="form-control form-opacity" placeholder="First Name" required="required" />
+                                    <input type="text" id="txtFName" name="txtFName" class="form-control form-opacity" placeholder="First Name" required="required" />
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" id="txtLName" runat="server" class="form-control form-opacity" placeholder="Last Name" required="required" />
+                                    <input type="text" id="txtLName" name="txtLName" class="form-control form-opacity" placeholder="Last Name" required="required" />
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="email" id="txtEmail" runat="server" class="form-control form-opacity" placeholder="Email" required="required" />
+                                    <input type="email" id="txtEmail1" name="txtEmail1" class="form-control form-opacity" placeholder="Email" required="required" />
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" id="txtNumber" runat="server" class="form-control form-opacity" placeholder="Phone Number" required="required" />
+                                    <input type="text" id="txtNumber" name="txtNumber" class="form-control form-opacity" placeholder="Phone Number" required="required" />
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="row">
-                                    What is your favorite spa service? (You can select more than one choice) 
+                                    What is your favorite spa service? (You can select more than one choice)
                                 </div>
                                 <div class="col-md-6">
                                     <div class="checkbox">
                                         <label>
-                                            <input id="cbHair" runat="server" type="checkbox" value="Hair" />Hair</label>
+                                            <input id="cbHair" name="cbHair" type="checkbox" value="Hair" />Hair
+                                        </label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="checkbox">
                                         <label>
-                                            <input id="cbNail" runat="server" type="checkbox" value="Nail" />Nail</label>
+                                            <input id="cbNail" name="cbNail" type="checkbox" value="Nail" />Nail
+                                        </label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="checkbox">
                                         <label>
-                                            <input id="cbFacial" runat="server" type="checkbox" value="Facial" />Facial</label>
+                                            <input id="cbFacial" name="cbFacial" type="checkbox" value="Facial" />Facial
+                                        </label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="checkbox">
                                         <label>
-                                            <input id="cbEyelash" runat="server" type="checkbox" value="Eyelash" />Eyelash</label>
+                                            <input id="cbEyelash" name="cbEyelash" type="checkbox" value="Eyelash" />Eyelash
+                                        </label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="checkbox">
                                         <label>
-                                            <input id="cbMassage" runat="server" type="checkbox" value="Massage" />Massage</label>
+                                            <input id="cbMassage" name="cbMassage" type="checkbox" value="Massage" />Massage
+                                        </label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="checkbox">
                                         <label>
-                                            <input id="cbWaxing" runat="server" type="checkbox" value="Waxing" />Waxing</label>
+                                            <input id="cbWaxing" name="cbWaxing" type="checkbox" value="Waxing" />Waxing
+                                        </label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="checkbox">
                                         <label>
-                                            <input id="cbProfessional" runat="server" type="checkbox" value="Professional Makeup" />Professional Makeup</label>
+                                            <input id="cbProfessional" name="cbProfessional" type="checkbox" value="Professional Makeup" />Professional Makeup
+                                        </label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="checkbox">
                                         <label>
-                                            <input id="cbPermanent" runat="server" type="checkbox" value="Permanent Makeup" />Permanent Makeup</label>
+                                            <input id="cbPermanent" name="cbPermanent" type="checkbox" value="Permanent Makeup" />Permanent Makeup
+                                        </label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="checkbox">
                                         <label>
-                                            <input id="cbSpa" runat="server" type="checkbox" value="Spa Party" />Spa Party</label>
+                                            <input id="cbSpa" name="cbSpa" type="checkbox" value="Spa Party" />Spa Party
+                                        </label>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="txtOther">Other:</label>
-                                        <textarea class="form-control" rows="5" id="txtOther" runat="server"></textarea>
+                                        <textarea class="form-control" rows="5" id="txtOther" name="txtOther"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <asp:Button ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" class="btn btn-white btn-rounded" Text="Submit" />
+                                    <input id="submit" name="submit" type="submit" value="Send"/>
                                 </div>
                             </div>
                             <div class="row">
@@ -265,37 +283,7 @@
 
                         <div class="col-sm-4">
                             <div id="mc_embed_signup" style="background: #5fc7ae none repeat scroll 0 0 !important;">
-                                <form action="//facebook.us11.list-manage.com/subscribe/post?u=01b7b6dcd807d4562015e49a3&amp;id=371dae5870" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                                    <div id="mc_embed_signup_scroll">
-                                        <div class="mc-field-group">
-                                            <h4 class="newsletter_title" style="margin: 0">
-                                                Stay informed with our newsletter
-                                            </h4>
-                                            <div class="row">
-                                                <div class="col-sm-9">
-                                                    <input type="email" value="" name="EMAIL" class="required email form-control form-opacity no-margin newsletter_input" id="mce-EMAIL">
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <input for="txtEmail" style="margin:0 !important" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-white btn-rounded">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div id="mce-responses" class="clear">
-                                                    <div class="response" id="mce-error-response" style="display: none"></div>
-                                                    <div class="response" id="mce-success-response" style="display: none"></div>
-                                                </div> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                                <div class="clear" style="position: absolute; left: -5000px;" aria-hidden="true">
-                                                    <input type="text" id="txtEmail" name="b_01b7b6dcd807d4562015e49a3_371dae5870" tabindex="-1" value="">
-                                                </div>
-                                                <div class="form-tip">
-                                                    <i class="fa fa-info-circle"></i> By subscribing, you authorize us to contact you via phone or electronic communication.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
+                               
                             </div>
                         </div>
                         <div class="col-md-4 text-right">
