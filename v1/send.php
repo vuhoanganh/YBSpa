@@ -22,8 +22,10 @@
     $body .= "- Other:" .$bLine;
     $body .= "  " .$other;
     
-    mail('shadowsong24@gmail.com', 'Contest', $body);
-	mail('vuhoanganh1603@gmail.com', 'Contest', $body);
+    mail('lan@gulfstreaminc.com', 'ContestYB', $body);
+	mail('vuhoanganh1603@gmail.com', 'ContestYB', $body);
+	mail('vivian@9cmarketing.com', 'ContestYB', $body);
+	mail('mai@9cmarketing.com', 'ContestYB', $body);
 	?>
 	<script type="text/javascript">
 		window.onload = function(){
