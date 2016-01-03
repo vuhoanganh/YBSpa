@@ -2,7 +2,7 @@
   if(isset($_POST['submit'])){
     $fName = $_POST['txtFName'];
     $lName = $_POST['txtLName'];
-    $email = $_POST['txtEmail'];
+    $email = $_POST['txtEmail1'];
     $number = $_POST['txtNumber'];
     $other = $_POST['txtOther'];
     $bLine = "\n";
