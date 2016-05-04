@@ -1524,7 +1524,7 @@ header .container {
 	transition:0.5s all;
 	min-width: 5px;
     transform: rotateY(0);
-    font-size: 32px;
+    font-size: 31px;
     padding-top: 5px;
 }
 

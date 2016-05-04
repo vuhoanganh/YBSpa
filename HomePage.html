@@ -49,6 +49,10 @@
             width: 100px !important;
             padding: 4px !important;
         }
+        .intro_item .over {
+            cursor: pointer;
+        }
+
     </style>
 
 </head>
@@ -56,55 +60,42 @@
 
     <div class="page" id="page">
 
-        <div style="position: absolute;left: 25px;top: 80px;z-index:100">
-            <img src="images/Y_B_logo_transparent.ico" style="width: 25%" />
-        </div>
         <!-- Header -->
         <header class="no_border green_hover">
 
 
             <!-- Logo -->
-            <div class="logo pull-left">
-                <a href="HomePage.html"><b>Young & Beautiful Salon Spa</b></a><br />
+            <div class="col-xs-11">
+                <div class="logo pull-left">
+                    <a href="HomePage.html"><b>Young & Beautiful Salon Spa</b></a><br />
+                </div>
+
+                <div class="logo pull-left" style="margin-top: 60px">
+                    <img src="images/Y_B_logo_transparent.ico" style="width: 25%" />
+                </div>
             </div>
 
             <!-- Header Buttons -->
-            <div class="header_btns_wrapper">
+            <div class="header_btns_wrapper col-sm-offset-5 col-sm-7 col-xs-1">
 
                 <!-- Main Menu Btn -->
-                <div class="main_menu"><i class="ti-menu"></i><i class="ti-close"></i></div>
+                <div class="main_menu">
+                    <i class="ti-menu"></i><i class="ti-close"></i>
+                </div>
 
                 <!-- Sub Menu -->
-                <div class="sub_menu">
+                <div class="sub_menu" style="width: 90%">
                     <div class="sub_cont">
                         <ul>
                             <li><a href="BeautyTips.html">BEAUTY TIPS</a></li>
                             <li><a href="Events.html">EVENTS</a></li>
                             <li><a href="Special.html">SPECIALS</a></li>
+                            <li><a href="Contest.html">CONTEST</a></li>
                             <li><a href="Services.html">SERVICES</a></li>
                             <li><a href="Gallery.html">GALLERY </a></li>
                             <li><a href="BookOnline.html">BOOK ONLINE</a></li>
                             <li><a href="Contact.html">CONTACT</a></li>
-
-
-                            <!-- Search
-                            <li class="right_sub no_arrow sub_min_width"><a href="#" class="parents"><i class="ti-search"></i></a>
-                                <ul class="mega_menu">
-                                    <li class="mega_sub bask_menu">
-                                        <form>
-                                            <input type="text" class="form-control" placeholder="Enter Your Keywords">
-                                            <button type="submit" class="se_btn">
-                                              <i class="ti-search"></i>
-                                            </button>
-                                        </form>
-                                    </li>
-                                </ul>
-                            </li> -->
-                            <!-- Search End-->
-
                         </ul>
-
-
                     </div>
                 </div>
                 <!-- Sub Menu End -->
@@ -142,13 +133,13 @@
                  </div> -->
                 <!-- Item -->
                 <div class="intro_item">
-                    <div class="over" data-opacity="0.2" data-color="#000"></div>
+                    <div class="over" data-opacity="0.2" data-color="#000" onclick="goSpecial()"></div>
                     <div class="into_back image_bck" data-image="images/banner.jpg"></div>
                     <div class="text_content">
                         <div class="intro_text intro_text_rc text-left text_up" data-color="#ea2e49">
-                            <a href="BookOnline.html"><span class="great_title great_title_big">Book Your Spa Holiday Party </span></a>
-                            <a href="Events.html"><span class="great_subtitle great_subtitle_big">Holiday Events at Young & Beautiful</span></a>
-
+                            <a href="BookOnline.html"><span class="great_title">Book Your Spa Party </span></a>
+                            <!--<a href="Events.html"><span class="great_subtitle great_subtitle_big">Holiday Events at Young & Beautiful</span></a>
+                            -->
                         </div>
                     </div>
                 </div>
@@ -320,6 +311,10 @@
             ftypes[0] = 'email';
         }(jQuery));
         var $mcj = jQuery.noConflict(true);
+
+        function goSpecial() {
+            window.location = "Special.html";
+        }
     </script>
 
 </body>
