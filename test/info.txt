@@ -1,0 +1,7 @@
+[04:14:12 PM] Hoang Anh: thong tin FTP:
+host: spa.gulfstreaminparadise.com
+user: u83199897-spa
+pass: A123456!
+[04:18:04 PM] Hoang Anh: mailchimp login
+user: youngbeautiful
+pass: 114%Dundas
